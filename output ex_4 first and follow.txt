@@ -1,0 +1,12 @@
+Enter no. of productions :4
+S=AbCd
+A=aA
+A=cCa
+C=cd
+
+Enter the Non terminal to find first and follow:A
+
+
+First(A)={a c }
+
+Follow(A)={b }

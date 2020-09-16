@@ -1,0 +1,59 @@
+CD LAB && can also be answer for assignment
+OUTPUT EXP.NO 5 : PREDICTIVE PARSING TABLE CONSTRUCTION
+
+(ASSIGNMENT Q.NO.1)
+Enter no. of productions :9
+S=ACB
+S=CbB
+S=Ba
+A=da
+A=BC
+B=g
+B=$
+C=h
+C=$
+
+NON-TERMINAL    |FIRST  |       FOLLOW  |
+_________________________________________________________________________
+S               |{d g $ h }     |       {}
+A               |{d g $ }       |       {h }
+B               |{g $ } |       {a h }
+C               |{h $ } |       {g b }
+pp.table| b     | a     | d     | g     | $     | h
+S       |  |  | ACB | ACB | ACB | ACB
+A       |  |  | da | da | da |
+B       |  |  |  | g | g |
+C       |  |  |  |  | h | h
+Process returned 0 (0x0)   execution time : 3.561 s
+Press any key to continue.
+
+(ASSIGNMENT Q.NO.2)
+Enter no. of productions :9
+S=aBDh
+B=cC
+C=bC
+C=$
+D=EF
+E=g
+E=$
+F=f
+F=$
+
+NON-TERMINAL    |FIRST  |       FOLLOW  |
+_________________________________________________________________________
+S               |{a }   |       {}
+B               |{c }   |       {g $ }
+C               |{b $ } |       {g }
+D               |{g $ } |       {h }
+E               |{g $ } |       {f }
+F               |{f $ } |       {h }
+pp.table| a     | h     | c     | b     | $     | g     | f
+S       | aBDh |  |  |  |  |  |
+B       |  |  | cC |  |  |  |
+C       |  |  |  | bC | bC |  |
+D       |  |  |  |  | EF | EF |
+E       |  |  |  |  | g | g |
+F       |  |  |  |  | f |  | f
+Process returned 0 (0x0)   execution time : 57.276 s
+Press any key to continue.
+

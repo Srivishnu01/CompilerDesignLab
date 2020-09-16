@@ -1,0 +1,60 @@
+OUTPUT 1:
+
+Enter no. of transition states : 2
+Enter no. of input symbols : 2
+Enter the input symbols :a v
+
+Kindly enter -1 for having NO TRANSITION
+transition(0,a) = 1
+transition(0,v) = 1
+transition(1,a) = 1
+transition(1,v) = 0
+enter initial state :0
+enter no. of final states :1
+enter final states :1
+Enter the String to be checked : avaaaaav
+
+Given string is REJECTED by DFA
+
+OUTPUT 2:
+
+Enter no. of transition states : 2
+Enter no. of input symbols : 3
+Enter the input symbols :A B C
+
+Kindly enter -1 for having NO TRANSITION
+transition(0,A) = 0
+transition(0,B) = 0
+transition(0,C) = 1
+transition(1,A) = 1
+transition(1,B) = 1
+transition(1,C) = 1
+enter initial state :0
+enter no. of final states :1
+enter final states :1
+Enter the String to be checked : AAABBBBBCCCCAABACBACB
+
+Given string is ACCEPTED by DFA
+
+OUTPUT 3:
+
+Enter no. of transition states : 3
+Enter no. of input symbols : 3
+Enter the input symbols :0 A b
+
+Kindly enter -1 for having NO TRANSITION
+transition(0,0) = -1
+transition(0,A) = 2
+transition(0,b) = 1
+transition(1,0) = -1
+transition(1,A) = -1
+transition(1,b) = 0
+transition(2,0) = 0
+transition(2,A) = 1
+transition(2,b) = -1
+enter initial state :0
+enter no. of final states :1
+enter final states :2
+Enter the String to be checked : 0AbbbA0AbbAAA00Ab
+
+Given string is REJECTED by DFA
